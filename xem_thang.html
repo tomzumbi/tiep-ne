@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>kiem tra thang co bao nhieu ngay</h1>
+<input type="number" min="1" max="12" id="b">
+<button type="button" onclick="a()">check</button>
+<script>
+    let thang1 = 1
+    let thang2 = 2
+    let thang3 = 3
+    let thang4 = 4
+    let thang5 = 5
+    let thang6 = 6
+    let thang7 = 7
+    let thang8 = 8
+    let thang9 = 9
+    let thang10 = 10
+    let thang11 = 11
+    let thang12 = 12
+    function a(){
+        let thang=+document.getElementById("b").value
+        switch (thang){
+            case thang1:
+            case thang3:
+            case thang5:
+            case thang7:
+            case thang8:
+            case thang10:
+            case thang12:
+                alert("thang nay co 31 ngay")
+                break;
+            case thang4:
+            case thang9:
+            case thang6:
+            case thang11:
+                alert("thang nay co 30 ngay")
+                break;
+            case thang2:
+                alert("thang nay co 28 hoac 29 ngay")
+        }
+    }
+</script>
+</body>
+</html>
